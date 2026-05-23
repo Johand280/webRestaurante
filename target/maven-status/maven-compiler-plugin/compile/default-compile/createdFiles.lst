@@ -1,0 +1,16 @@
+com\restaurante\modelo\Categoria.class
+com\restaurante\modelo\DetallePedido.class
+com\restaurante\dao\CategoriaDAO.class
+com\restaurante\servlet\AuthServlet.class
+com\restaurante\servlet\ClienteServlet.class
+com\restaurante\dao\PedidoDAO.class
+com\restaurante\util\ConexionDB.class
+com\restaurante\modelo\Producto.class
+com\restaurante\servlet\AdminServlet.class
+com\restaurante\dao\ProductoDAO.class
+com\restaurante\dao\UsuarioDAO.class
+com\restaurante\modelo\Pedido.class
+com\restaurante\modelo\Usuario.class
+com\restaurante\modelo\Rol.class
+com\restaurante\servlet\TrabajadorServlet.class
+com\restaurante\util\EncodingFilter.class

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="https://jakarta.ee/xml/ns/jakartaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee
+         https://jakarta.ee/xml/ns/jakartaee/web-app_6_0.xsd"
+         version="6.0">
+
+    <display-name>Sistema de Gestión de Restaurante</display-name>
+    <description>Inventario, precios y usuarios para establecimiento de comidas</description>
+
+    <!-- Página de inicio -->
+    <welcome-file-list>
+        <welcome-file>index.jsp</welcome-file>
+    </welcome-file-list>
+
+    <!-- Página de error 403 -->
+    <error-page>
+        <error-code>403</error-code>
+        <location>/acceso-denegado.jsp</location>
+    </error-page>
+
+    <!-- Página de error 404 -->
+    <error-page>
+        <error-code>404</error-code>
+        <location>/error404.jsp</location>
+    </error-page>
+
+    <!-- Codificación de caracteres -->
+    <filter>
+        <filter-name>EncodingFilter</filter-name>
+        <filter-class>com.restaurante.util.EncodingFilter</filter-class>
+    </filter>
+    <filter-mapping>
+        <filter-name>EncodingFilter</filter-name>
+        <url-pattern>/*</url-pattern>
+    </filter-mapping>
+
+    <!-- Seguridad de sesión -->
+    <session-config>
+        <session-timeout>60</session-timeout>
+        <cookie-config>
+            <http-only>true</http-only>
+        </cookie-config>
+    </session-config>
+</web-app>
